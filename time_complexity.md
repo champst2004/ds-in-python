@@ -1,6 +1,8 @@
 ## Simple for-loop
+```
 for x in range(n):  
     statement(s) that take constant time  
+```
 ### Running Time Complexity = O(n)
 
 ## For-loop with Increments
