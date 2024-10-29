@@ -1,4 +1,4 @@
-def merge_lists(nums1, nums2):
+def merge_lists(nums1, nums2): # O(m + n)
     result = [None] * (len(nums1)+len(nums2))
     p1 = 0
     p2 = 0
@@ -23,7 +23,7 @@ def merge_lists(nums1, nums2):
         p3 += 1
     return result
 
-def merge_lists2(nums1, nums2):
+def merge_lists2(nums1, nums2): # O((m + n) * m)
     p1 = 0
     p2 = 0
     
