@@ -34,14 +34,14 @@ def find_product3(nums): # O(n)
     for values in nums:
         product.append(left)
         left = left * values
-    print(product)
+    #print(product)
         
     # Second pass: Update the product list by calculating products from right to left
     right = 1
     for i in range(len(nums)-1, -1, -1):
         product[i] = product[i] * right
         right = right * nums[i]
-    print(product)
+    #print(product)
 
     return product
 
