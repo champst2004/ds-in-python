@@ -1,4 +1,4 @@
-def find_second_maximum(nums):
+def find_second_maximum(nums): # O(n)
     max = float('-inf')
     max2 = float('-inf')
 
