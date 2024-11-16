@@ -1,4 +1,4 @@
-def right_rotate(nums, k): 
+def right_rotate(nums, k): # O(n)
     if len(nums) == 0:
         k = 0
     else:
@@ -14,8 +14,16 @@ def right_rotate(nums, k):
         
     return rotatedList
 
+def right_rotate2(nums, k): # O(n)
+    if len(nums) == 0:
+        k = 0
+    else:
+        k = k % len(nums)
+    rotated_list = nums[-k:] + nums[:-k]
 
-def rotate(nums, k):
+    return rotated_list
+
+def rotate(nums, k): # O(n)
     rotatedList = []
 
     for i in range(len(nums)):
@@ -25,4 +33,5 @@ def rotate(nums, k):
 
 
 print(right_rotate([10, 20, 30, 40, 50], 3))
-print(rotate([10, 20, 30, 40, 50, 60, 70], 3))
+print(right_rotate2([10, 20, 30, 40, 50], 3))
+print(rotate([10, 20, 30, 40, 50], 3))
